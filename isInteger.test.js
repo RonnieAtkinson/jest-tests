@@ -6,15 +6,15 @@ describe('isInteger()', () => {
             expect(isInteger(1)).toEqual(true);
         });
 
-        test('float value fail', () => {
+        test('fail for float value', () => {
             expect(isInteger(1.23)).toEqual(false);
         });
 
-        test('Number as string fail', () => {
+        test('fail for number as string', () => {
             expect(isInteger('22')).toEqual(false);
         });
 
-        test('String value fail', () => {
+        test('fail for string value', () => {
             expect(isInteger('This is a string')).toEqual(false);
         });
     });
