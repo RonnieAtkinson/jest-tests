@@ -21,6 +21,11 @@ describe('type check', () => {
 
     test('should be an Array', () => {
         expect(Array.isArray(['foo', 'bar']))
+            .toBe(true);
+    });
+
+    test('should be an Array', () => {
+        expect(['foo', 'bar'])
             .toEqual(expect.any(Array));
     });
 
